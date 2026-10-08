@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>끄적끄적 스케치북</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l4.2-1L19 8.2 15.8 5 5 15.8z"/><path d="M13.8 7l3.2 3.2"/></symbol>
+    <symbol id="i-brush" viewBox="0 0 24 24"><path d="M10.5 13.5L20 4"/><path d="M4 20c3.2.4 6.2-1.2 6.4-3.8.1-1.5-1.1-2.8-2.6-2.7-1.6.1-2.6 1.3-2.7 2.9-.1 1.5-.5 2.6-1.1 3.6z"/></symbol>
+    <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20l1-4.5L16 4.5 19.5 8 8.5 19z"/><path d="M14 7l3 3"/><path d="M5 15.5l3.5 3.5"/></symbol>
+    <symbol id="i-marker" viewBox="0 0 24 24"><path d="M9 15l-2 5h4l1-3"/><path d="M9 15l6.5-11 3.5 2-6.5 11z"/><path d="M4 21h16" opacity=".5"/></symbol>
+    <symbol id="i-calli" viewBox="0 0 24 24"><path d="M12 3l5 7-5 11-5-11z"/><path d="M12 10v5"/><circle cx="12" cy="10" r="1"/></symbol>
+    <symbol id="i-spray" viewBox="0 0 24 24"><rect x="9" y="9" width="7" height="12" rx="1.5"/><path d="M11 9V6h3v3"/><path d="M5 4h.01M3 7h.01M6 7.5h.01M4 10h.01M7 3h.01"/></symbol>
+    <symbol id="i-neon" viewBox="0 0 24 24"><path d="M3 16c3-9 6 3 9-4s5 3 9-5"/><path d="M3 20c3-9 6 3 9-4s5 3 9-5" opacity=".35"/></symbol>
+    <symbol id="i-rainbow" viewBox="0 0 24 24"><path d="M3 18a9 9 0 0 1 18 0"/><path d="M6.5 18a5.5 5.5 0 0 1 11 0"/><path d="M10 18a2 2 0 0 1 4 0"/></symbol>
+    <symbol id="i-sketchy" viewBox="0 0 24 24"><path d="M3 18L9 5l5 12 7-13"/><path d="M5 13.5l12-3"/><path d="M6.5 9.5l10 6"/></symbol>
+    <symbol id="i-crayon" viewBox="0 0 24 24"><path d="M6 18l9.5-9.5 3 3L9 21H6z"/><path d="M15.5 8.5l2-2 3 3-2 2"/><path d="M8 16l3 3" stroke-dasharray="1.5 1.5"/></symbol>
+    <symbol id="i-eraser" viewBox="0 0 24 24"><path d="M9 20h11"/><path d="M4.6 15.4l9.2-9.2a2 2 0 0 1 2.8 0l3.2 3.2a2 2 0 0 1 0 2.8L13 19H8.2z"/><path d="M9 11l5 5"/></symbol>
+    <symbol id="i-fill" viewBox="0 0 24 24"><path d="M4.5 12L11 5.5l7 7L11.5 19z"/><path d="M4.5 12h13.5"/><path d="M20 15s2 2.4 2 3.8a2 2 0 0 1-4 0c0-1.4 2-3.8 2-3.8z"/></symbol>
+    <symbol id="i-picker" viewBox="0 0 24 24"><path d="M14.5 4.5l5 5-2.2 2.2-5-5z"/><path d="M13 7.5l-8 8V19h3.5l8-8"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 13V6.5a1.5 1.5 0 0 1 3 0V12"/><path d="M11 11V5a1.5 1.5 0 0 1 3 0v6"/><path d="M14 11V6.5a1.5 1.5 0 0 1 3 0V14c0 4-2.5 7-6.5 7-2.6 0-4-1.2-5.4-3.4L3.5 15a1.5 1.5 0 0 1 2.5-1.6L8 15.5"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+    <symbol id="i-redo" viewBox="0 0 24 24"><path d="M15 14l5-5-5-5"/><path d="M20 9H9.5a5.5 5.5 0 0 0 0 11H13"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M10 11v6M14 11v6"/><path d="M5.5 7l1 13h11l1-13"/><path d="M9 7V4h6v3"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></symbol>
+    <symbol id="i-save" viewBox="0 0 24 24"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M4 19h16"/></symbol>
+    <symbol id="i-fit" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  </defs>
+</svg>
+
+<div class="app" id="app">
+  <header class="topbar">
+    <div class="brand"><span class="logo">끄적끄적</span><span class="doc-size" id="docSize">—</span></div>
+    <div class="bar-group">
+      <button class="btn" id="btnOpen" title="이미지 불러오기 (Ctrl+O) · 끌어놓기 · 붙여넣기"><svg><use href="#i-image"/></svg><span>이미지</span></button>
+      <label class="select-wrap" title="종이">
+        <select id="paper">
+          <option value="white">흰 종이</option>
+          <option value="lined">줄노트</option>
+          <option value="grid">모눈</option>
+          <option value="dots">도트</option>
+          <option value="kraft">크라프트</option>
+          <option value="black">검정</option>
+        </select>
+      </label>
+    </div>
+    <div class="bar-group">
+      <button class="btn icon" id="btnUndo" title="되돌리기 (Ctrl+Z)"><svg><use href="#i-undo"/></svg></button>
+      <button class="btn icon" id="btnRedo" title="다시 하기 (Ctrl+Shift+Z)"><svg><use href="#i-redo"/></svg></button>
+      <button class="btn icon" id="btnClear" title="그림 지우기"><svg><use href="#i-trash"/></svg></button>
+      <button class="btn icon" id="btnFit" title="화면에 맞추기 (Ctrl+0)"><svg><use href="#i-fit"/></svg></button>
+    </div>
+    <div class="bar-group magic">
+      <button class="btn accent" id="btnBlend" title="그린 것을 불러온 이미지의 빛·색·질감에 맞춰 녹여요"><svg><use href="#i-sparkle"/></svg><span>이미지에 녹이기</span></button>
+      <button class="btn accent" id="btnSearch" title="대충 그린 그림과 닮은 이미지를 찾아요"><svg><use href="#i-search"/></svg><span>닮은 이미지</span></button>
+    </div>
+    <div class="bar-group end">
+      <button class="btn icon only-narrow" id="btnProps" title="펜 설정"><svg><use href="#i-sliders"/></svg></button>
+      <button class="btn" id="btnSave" title="PNG로 저장 (Ctrl+S)"><svg><use href="#i-save"/></svg><span>저장</span></button>
+    </div>
+  </header>
+
+  <nav class="toolrail" id="toolrail" aria-label="도구"></nav>
+
+  <main class="viewport" id="viewport">
+    <div class="stage" id="stage">
+      <canvas id="bgCanvas"></canvas>
+      <canvas id="drawCanvas"></canvas>
+      <canvas id="guideCanvas"></canvas>
+    </div>
+    <div class="brush-cursor" id="brushCursor" hidden></div>
+    <div class="shape-badge" id="shapeBadge" hidden></div>
+    <div class="drop-hint" id="dropHint" hidden>여기에 놓으면 이미지를 불러와요</div>
+    <div class="zoom-chip" id="zoomChip">100%</div>
+  </main>
+
+  <aside class="props" id="props" aria-label="펜 설정">
+    <section class="prop-block">
+      <div class="prop-head"><h2 id="toolName">펜</h2><span class="hint" id="toolHint"></span></div>
+      <canvas class="preview" id="preview" width="520" height="120" aria-label="펜 미리보기"></canvas>
+    </section>
+
+    <section class="prop-block">
+      <h3>색</h3>
+      <div class="swatches" id="swatches"></div>
+      <div class="color-row">
+        <input type="color" id="color" value="#1b1f27" aria-label="색 직접 고르기">
+        <span class="mono" id="colorHex">#1B1F27</span>
+        <span class="recent" id="recent"></span>
+      </div>
+    </section>
+
+    <section class="prop-block sliders">
+      <label class="slider"><span>굵기</span><input type="range" id="size" min="1" max="120" value="6"><output id="sizeOut">6</output></label>
+      <label class="slider"><span>불투명도</span><input type="range" id="opacity" min="5" max="100" value="100"><output id="opacityOut">100%</output></label>
+      <label class="slider"><span>손떨림 보정</span><input type="range" id="smoothing" min="0" max="95" value="45"><output id="smoothingOut">45</output></label>
+    </section>
+
+    <section class="prop-block">
+      <h3>필압</h3>
+      <div class="seg" id="pressureMode" role="radiogroup" aria-label="필압 방식">
+        <button data-v="auto" role="radio" title="펜은 실제 필압, 마우스·손가락은 속도로">자동</button>
+        <button data-v="velocity" role="radio" title="빠를수록 가늘게 (붓글씨 느낌)">속도</button>
+        <button data-v="pressure" role="radio" title="태블릿·애플펜슬 필압만 사용">펜 필압</button>
+        <button data-v="fixed" role="radio" title="항상 같은 굵기">고정</button>
+      </div>
+      <label class="slider"><span>필압 곡선</span><input type="range" id="curve" min="30" max="300" value="100"><output id="curveOut">보통</output></label>
+      <div class="meter-row">
+        <div class="meter"><div class="meter-fill" id="meterFill"></div></div>
+        <span class="mono meter-val" id="meterVal">0.00</span>
+        <span class="meter-src" id="meterSrc">대기</span>
+      </div>
+    </section>
+
+    <section class="prop-block">
+      <h3>보정 · 대칭</h3>
+      <label class="toggle"><input type="checkbox" id="quickShape" checked><span>끝에서 꾹 누르면 도형으로 다듬기</span></label>
+      <label class="row-select"><span>대칭</span>
+        <select id="symmetry">
+          <option value="none">없음</option>
+          <option value="mx">좌우</option>
+          <option value="my">상하</option>
+          <option value="quad">4방향</option>
+          <option value="r6">회전 6</option>
+          <option value="kaleido">만화경 12</option>
+        </select>
+      </label>
+      <label class="row-select"><span>그림 겹치기</span>
+        <select id="layerBlend">
+          <option value="source-over">보통</option>
+          <option value="multiply">곱하기 (선화에 좋아요)</option>
+          <option value="screen">스크린</option>
+          <option value="overlay">오버레이</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="prop-block" id="bgBlock" hidden>
+      <h3>불러온 이미지</h3>
+      <label class="slider"><span>비침</span><input type="range" id="bgOpacity" min="0" max="100" value="100"><output id="bgOpacityOut">100%</output></label>
+      <div class="btn-row">
+        <button class="btn small" id="btnFitDoc">캔버스를 이미지 크기로</button>
+        <button class="btn small ghost" id="btnRemoveBg">이미지 빼기</button>
+      </div>
+    </section>
+
+    <p class="keys">B 펜 · E 지우개 · G 채우기 · I 스포이드 · [ ] 굵기 · Space 끌어 이동 · Ctrl+휠 확대</p>
+  </aside>
+
+  <!-- 이미지에 녹이기 -->
+  <section class="sheet" id="blendSheet" hidden aria-label="이미지에 녹이기">
+    <div class="sheet-head">
+      <h2>이미지에 녹이기</h2>
+      <button class="btn icon ghost" id="blendClose" title="닫기"><svg><use href="#i-close"/></svg></button>
+    </div>
+    <p class="sheet-sub">그린 선의 밝기를 사진의 빛에 맞추고, 색감과 질감을 빌려와 사진 속에 원래 있던 것처럼 보이게 해요.</p>
+    <div class="sliders">
+      <label class="slider"><span>전체 강도</span><input type="range" id="hStrength" min="0" max="100" value="75"><output>75</output></label>
+      <label class="slider"><span>빛 따르기</span><input type="range" id="hLight" min="0" max="100" value="70"><output>70</output></label>
+      <label class="slider"><span>색감 맞추기</span><input type="range" id="hColor" min="0" max="100" value="60"><output>60</output></label>
+      <label class="slider"><span>질감 비치기</span><input type="range" id="hTexture" min="0" max="100" value="45"><output>45</output></label>
+      <label class="slider"><span>가장자리</span><input type="range" id="hEdge" min="0" max="100" value="30"><output>30</output></label>
+      <label class="slider"><span>입자감</span><input type="range" id="hGrain" min="0" max="100" value="40"><output>40</output></label>
+    </div>
+    <div class="btn-row">
+      <button class="btn ghost" id="blendCompare" title="누르고 있는 동안 원래 그림">누르고 원본 보기</button>
+      <span class="spacer"></span>
+      <button class="btn ghost" id="blendCancel">취소</button>
+      <button class="btn accent" id="blendApply">적용</button>
+    </div>
+  </section>
+
+  <!-- 닮은 이미지 찾기 -->
+  <aside class="drawer" id="searchDrawer" hidden aria-label="닮은 이미지 찾기">
+    <div class="sheet-head">
+      <h2>닮은 이미지 찾기</h2>
+      <button class="btn icon ghost" id="searchClose" title="닫기"><svg><use href="#i-close"/></svg></button>
+    </div>
+    <div class="search-top">
+      <canvas id="sketchThumb" width="112" height="112" aria-label="분석할 그림"></canvas>
+      <div class="search-meta">
+        <p class="sheet-sub" id="searchStatus">그린 것을 인공지능이 알아보고, 위키미디어 공용에서 비슷한 이미지를 찾아 그림과 닮은 순서로 보여줘요.</p>
+        <div class="progress" id="searchProgress" hidden><div class="progress-fill" id="searchProgressFill"></div></div>
+      </div>
+    </div>
+    <div class="guesses" id="guesses"></div>
+    <form class="query-row" id="queryForm">
+      <input type="text" id="queryInput" placeholder="직접 검색어 (예: cat, 고양이)" autocomplete="off">
+      <button class="btn small" type="submit">찾기</button>
+    </form>
+    <div class="results" id="results"></div>
+    <div class="ext-links" id="extLinks"></div>
+    <button class="btn accent wide" id="btnAnalyze">내 그림 알아보기</button>
+  </aside>
+
+  <div class="modal" id="resultModal" hidden>
+    <div class="modal-card">
+      <img id="modalImg" alt="">
+      <p class="modal-cap" id="modalCap"></p>
+      <div class="btn-row">
+        <a class="btn ghost" id="modalSource" target="_blank" rel="noopener">출처 보기</a>
+        <span class="spacer"></span>
+        <button class="btn ghost" id="modalClose">닫기</button>
+        <button class="btn accent" id="modalUse">배경으로 불러와 덧그리기</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <input type="file" id="fileInput" accept="image/*" hidden>
+</div>
+
+<script src="js/util.js"></script>
+<script src="js/brushes.js"></script>
+<script src="js/shapes.js"></script>
+<script src="js/harmonize.js"></script>
+<script src="js/labels.js"></script>
+<script src="js/search.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
